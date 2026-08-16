@@ -1,0 +1,18 @@
+name: UUIOptimizer
+version: ${project.version}
+main: dev.r0ine.uuiopt.UUIOptimizer
+api-version: '1.20'
+authors: [ r0ine ]
+softdepend: [ UltimateUI, ViaVersion, ProtocolSupport ]
+load: POSTWORLD
+description: Drops redundant packets sent by UltimateUI.
+
+commands:
+  uuiopt:
+    description: Filter statistics and controls
+    usage: /uuiopt [stats|ids|pipeline [player]|reload|reset|toggle]
+    permission: uuiopt.admin
+
+permissions:
+  uuiopt.admin:
+    default: op

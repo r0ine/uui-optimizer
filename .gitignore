@@ -1,0 +1,14 @@
+target/
+lab-server/
+lab/node_modules/
+lab/package-lock.json
+lab/*.log
+lab/commands.txt
+lab/komut.txt
+lab/stress-*.txt
+lab/stress-*.json
+lab/olcum/
+*.jar
+.env
+.idea/
+*.iml
