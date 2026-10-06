@@ -1,0 +1,30 @@
+enabled: true
+
+# uui: only touch entities with id >= min-entity-id (UltimateUI's fake entities).
+# all: also deduplicate vanilla entities. Repeated velocity packets can be real
+# knockback events there, so leave this on uui unless you know you want it.
+entity-scope: uui
+min-entity-id: 2000000000
+
+# Identical stop_sound packets inside this window are dropped.
+stop-sound-interval-ms: 500
+
+# Leave clients that ViaVersion/ProtocolSupport translate untouched.
+# Their packet ids differ from the server's, so filtering them would be wrong.
+skip-mismatched-clients: true
+
+# Seconds between summary lines in the console, 0 to disable.
+stats-log-interval: 60
+
+# Each rule drops a packet only when it carries no new information.
+rules:
+  stop-sound: true
+  entity-metadata: true
+  head-rotation: true
+  entity-velocity: true
+  equipment: true
+  attributes: true
+  position-sync: true
+  teleport: true
+  # Relative moves with zero delta and unchanged rotation/ground flag.
+  relative-move: true
