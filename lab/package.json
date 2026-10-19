@@ -1,0 +1,11 @@
+{
+  "name": "uui-optimizer-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bots and scripts used to measure UUIOptimizer",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "mineflayer": "^4.39.0"
+  }
+}
